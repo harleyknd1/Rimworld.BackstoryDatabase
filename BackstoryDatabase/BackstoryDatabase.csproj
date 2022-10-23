@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: C:\Users\Kirito\Downloads\steamcmd\steamapps\workshop\content\294100\1854376306\1.4\Assemblies\NyaronNarco.dll-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3E69293C-D869-49BE-AD4E-F35AF914993C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>BackstoryDatabase</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <ApplicationVersion>1.0.0.0</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>Nry</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Krafs.Rimworld.Ref" Version="1.4.3520-beta" />
+    <PackageReference Include="Lib.Harmony" Version="2.2.2" ExcludeAssets="runtime">
+      <IncludeAssets>compile; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="MoonSharp" Version="2.0.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BackstoryDatabase.cs" />
+    <Compile Include="BackstoryDatabaseMod.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Resources\1.4\Backstories\Gambler_Adult.xml" />
+    <Content Include="Resources\1.4\Backstories\Gambler_Child.xml" />
+    <Content Include="Resources\1.4\Backstories\ImperialCommon_Adult.xml" />
+    <Content Include="Resources\1.4\Backstories\ImperialCommon_Child.xml" />
+    <Content Include="Resources\1.4\Backstories\ImperialFighter_Adult.xml" />
+    <Content Include="Resources\1.4\Backstories\ImperialFighter_Child.xml" />
+    <Content Include="Resources\1.4\Backstories\ImperialRoyal_Adult.xml" />
+    <Content Include="Resources\1.4\Backstories\ImperialRoyal_Child.xml" />
+    <Content Include="Resources\1.4\Backstories\InsectsRelated_Child.xml" />
+    <Content Include="Resources\1.4\Backstories\Marshal_Adult.xml" />
+    <Content Include="Resources\1.4\Backstories\Mate_Child.xml" />
+    <Content Include="Resources\1.4\Backstories\Offworld_Glitterworld_Adult.xml" />
+    <Content Include="Resources\1.4\Backstories\Offworld_Medieval_Adult.xml" />
+    <Content Include="Resources\1.4\Backstories\Offworld_Medieval_Child.xml" />
+    <Content Include="Resources\1.4\Backstories\Offworld_Nonspecific_Adult.xml" />
+    <Content Include="Resources\1.4\Backstories\Offworld_Nonspecific_Child.xml" />
+    <Content Include="Resources\1.4\Backstories\Offworld_Specific_Adult.xml" />
+    <Content Include="Resources\1.4\Backstories\Offworld_Specific_Child.xml" />
+    <Content Include="Resources\1.4\Backstories\Outsider_Adult.xml" />
+    <Content Include="Resources\1.4\Backstories\Pirate_Adult.xml" />
+    <Content Include="Resources\1.4\Backstories\Sadist_Adult.xml" />
+    <Content Include="Resources\1.4\Backstories\Sadist_Child.xml" />
+    <Content Include="Resources\1.4\Backstories\Tribal_Adult.xml" />
+    <Content Include="Resources\1.4\Backstories\Tribal_Child.xml" />
+    <Content Include="Resources\About\About.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
